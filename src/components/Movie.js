@@ -6,9 +6,9 @@ function Movie({id, coverImage, title, summary, genres}) {
     return  <div>
     <img src={coverImage} alt={title}/>
     <h2>
-      <Link to={`/movie/${id}`}>{title}</Link>
+      <Link to={`/movies/${id}`}>{title}</Link>
     </h2>
-    <p>{summary}</p>
+    <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
     <ul>  
       {genres && genres.map((genre) => ( // 장르가 없는 영화도 있어서 undefined인지 아닌지 체크
         <li key={genre}>{genre}</li>

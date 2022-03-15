@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Movie from "../components/Movie";
+import Header from "../components/header/Header";
 
 // Movie 컴포넌트 이용해  api 통해 영화 데이터 가져오고 영화 목록 보여주는 역할
 function Home() {
@@ -21,7 +22,9 @@ function Home() {
 
   return (
     <div>
-      {loading ? <h1>Loading...</h1> : movies.map((movie) => (
+        <Header />
+      {loading ? <h1>Loading...</h1> : 
+      movies.map((movie) => (
         <Movie 
           key={movie.id}
           id={movie.id}
