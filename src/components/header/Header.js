@@ -11,13 +11,16 @@ function Header() {
         window.addEventListener("scroll", updateScroll);
     })
     return (
-        <header className={scrollPosition < 10 ? styles.original_header : styles.changed_header}>
+        <header className={`${styles.header} ${scrollPosition < 10 ? styles.original_header : styles.changed_header}`}>
             <Link to="/" className={styles.logo}>
                 <i className="fab fa-neos"></i>
                 <strong>ETFLEX</strong>
             </Link>
             <nav className={styles.nav}>
                 <ul className={styles.ul}>
+                    <li>
+                        <Link to="/genres/popular">Popular</Link>
+                    </li>
                     <li>
                         <Link to="/genres/action">Action</Link>
                     </li>

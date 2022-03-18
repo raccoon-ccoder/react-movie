@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Movie from '../components/Movie';
+import Movie from '../components/movie/Movie';
 
 // 영화 상세페이지를 보여주는 역할
 function Detail() {

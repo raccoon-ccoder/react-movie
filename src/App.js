@@ -6,14 +6,15 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import GlobalStyles from "./components/GlobalStyles";
 
+
 function App() {
   return (
   <Router basename={process.env.PUBLIC_URL}>
+    <GlobalStyles />
     <Routes>  
       <Route path="/" element={<Home />} />
       <Route path="/movies/:id" element={<Detail />} />
     </Routes>
-    <GlobalStyles />
   </Router>
   );
 }
