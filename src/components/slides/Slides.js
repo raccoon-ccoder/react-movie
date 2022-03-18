@@ -37,7 +37,7 @@ function Slides({title, api}) {
     return (
         <div className={styles.container}>
             <div className={styles.title_container}>
-                <Link to={`/genres/${title}`}>
+                <Link to={`/genres/${title.toLowerCase()}`}>
                 <h1 className={styles.title}>
                     <i className="fas fa-external-link-alt fa-lg"></i>
                     <span className={styles.title_text}>{title}</span>
@@ -68,7 +68,7 @@ function Slides({title, api}) {
                             summary=""
                             genres={movie.genres}
                             movie_style={{
-                                width: "360px",
+                                minWidth: "360px",
                                 height: "280px"
                             }}
                         />

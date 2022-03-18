@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Movie from '../components/movie/Movie';
+import Point from '../components/point/Point';
+import Header from '../components/header/Header';
+import styles from './Detail.module.css';
+import Loading from '../components/loading/Loading';
 
 // 영화 상세페이지를 보여주는 역할
 function Detail() {
@@ -21,18 +24,25 @@ function Detail() {
     useEffect(async() => {
        getMovie();
     }, []);
-  
+
     return (
-        <div>
-            {loading ? <h1>Loading</h1> : 
-            <Movie 
-                id={movie.id}
-                coverImage={movie.large_cover_image}
-                title={movie.title} 
-                summary={movie.summary}
-                genres={movie.genres}
-            />
-            }
+        <div className={styles.detail_container}>
+            <Header />
+                {loading ? 
+                    <div>
+                        <Loading />
+                    </div>
+                : 
+                    <Point 
+                        title={movie.title_long}
+                        genres={movie.genres}
+                        rating={movie.rating}
+                        desc={movie.description_intro}
+                        coverImg={movie.medium_cover_image}
+                        bgImg={movie.background_image}
+                    />
+                }
+            
         </div>
     );
 }

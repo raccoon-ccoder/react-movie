@@ -11,7 +11,7 @@ function Header() {
         window.addEventListener("scroll", updateScroll);
     })
     return (
-        <header className={`${styles.header} ${scrollPosition < 10 ? styles.original_header : styles.changed_header}`}>
+        <header className={`${styles.header} ${scrollPosition < 10 ? null : styles.changed_header}`}>
             <Link to="/" className={styles.logo}>
                 <i className="fab fa-neos"></i>
                 <strong>ETFLEX</strong>
