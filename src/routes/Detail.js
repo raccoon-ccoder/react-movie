@@ -28,21 +28,20 @@ function Detail() {
     return (
         <div className={styles.detail_container}>
             <Header />
-                {loading ? 
-                    <div>
-                        <Loading />
-                    </div>
-                : 
-                    <Point 
-                        title={movie.title_long}
-                        genres={movie.genres}
-                        rating={movie.rating}
-                        desc={movie.description_intro}
-                        coverImg={movie.medium_cover_image}
-                        bgImg={movie.background_image}
-                    />
-                }
-            
+            {loading ? 
+                <div className={styles.loading}>
+                    <Loading />
+                </div>
+            : 
+                <Point 
+                    title={movie.title_long}
+                    genres={movie.genres}
+                    rating={movie.rating}
+                    desc={movie.description_intro}
+                    coverImg={movie.medium_cover_image}
+                    bgImg={movie.background_image}
+                />
+            }
         </div>
     );
 }
