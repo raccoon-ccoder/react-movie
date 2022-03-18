@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-movie/static/css/main.354e2127.css",
-    "main.js": "/react-movie/static/js/main.6f24382a.js",
+    "main.css": "/react-movie/static/css/main.fefccced.css",
+    "main.js": "/react-movie/static/js/main.b2a391e5.js",
     "static/media/BlackHanSans-Regular.ttf": "/react-movie/static/media/BlackHanSans-Regular.f4f89062321390018f92.ttf",
     "static/media/fa-solid-900.ttf": "/react-movie/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/fa-brands-400.ttf": "/react-movie/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
@@ -12,11 +12,11 @@
     "static/media/fa-v4compatibility.ttf": "/react-movie/static/media/fa-v4compatibility.52eba2c567c521b8d58a.ttf",
     "static/media/fa-v4compatibility.woff2": "/react-movie/static/media/fa-v4compatibility.3d503f89ccaf1b224aa5.woff2",
     "index.html": "/react-movie/index.html",
-    "main.354e2127.css.map": "/react-movie/static/css/main.354e2127.css.map",
-    "main.6f24382a.js.map": "/react-movie/static/js/main.6f24382a.js.map"
+    "main.fefccced.css.map": "/react-movie/static/css/main.fefccced.css.map",
+    "main.b2a391e5.js.map": "/react-movie/static/js/main.b2a391e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.354e2127.css",
-    "static/js/main.6f24382a.js"
+    "static/css/main.fefccced.css",
+    "static/js/main.b2a391e5.js"
   ]
 }
