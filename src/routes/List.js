@@ -24,9 +24,10 @@ function List() {
         setLoading(false);
     }
     
-    useEffect(() => {
+    useEffect(() => { 
+        setLoading(true);
         getMovies();
-    },[movies]);
+    },[genre]);
 
     return (
         <div className={styles.list_container}>
