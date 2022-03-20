@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-movie/static/css/main.fefccced.css",
-    "main.js": "/react-movie/static/js/main.b2a391e5.js",
+    "main.js": "/react-movie/static/js/main.625c89e5.js",
     "static/media/BlackHanSans-Regular.ttf": "/react-movie/static/media/BlackHanSans-Regular.f4f89062321390018f92.ttf",
     "static/media/fa-solid-900.ttf": "/react-movie/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/fa-brands-400.ttf": "/react-movie/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/react-movie/static/media/fa-v4compatibility.3d503f89ccaf1b224aa5.woff2",
     "index.html": "/react-movie/index.html",
     "main.fefccced.css.map": "/react-movie/static/css/main.fefccced.css.map",
-    "main.b2a391e5.js.map": "/react-movie/static/js/main.b2a391e5.js.map"
+    "main.625c89e5.js.map": "/react-movie/static/js/main.625c89e5.js.map"
   },
   "entrypoints": [
     "static/css/main.fefccced.css",
-    "static/js/main.b2a391e5.js"
+    "static/js/main.625c89e5.js"
   ]
 }
